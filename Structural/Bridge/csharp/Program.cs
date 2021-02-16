@@ -55,7 +55,7 @@ namespace DesignPatterns
     {
         public void Display(string text)
         {
-            Console.WriteLine("Satış rapor metni.");
+            Console.WriteLine("Sales report text.");
         }
     }
 
@@ -63,7 +63,7 @@ namespace DesignPatterns
     {
         public void Display(string text)
         {
-            Console.WriteLine("Performans rapor metni.");
+            Console.WriteLine("Performance report text.");
         }
     }
 

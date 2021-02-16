@@ -23,7 +23,7 @@ namespace DesignPatterns
     {
         public override void ExecuteCommand(string query)
         {
-            Console.WriteLine("MsSql sorgu çalıştırıldı.");
+            Console.WriteLine("MsSql query was run.");
         }
     }
 
@@ -31,7 +31,7 @@ namespace DesignPatterns
     {
         public override void ExecuteCommand(string query)
         {
-            Console.WriteLine("MongoDb sorgu çalıştırıldı.");
+            Console.WriteLine("MongoDB query was run.");
         }
     }
     #endregion
@@ -47,13 +47,13 @@ namespace DesignPatterns
     {
         public override bool CloseConnection()
         {
-            Console.WriteLine("Bağlantı kapatıldı.");
+            Console.WriteLine("The connection has been closed.");
             return true;
         }
 
         public override bool OpenConnection()
         {
-            Console.WriteLine("Bağlantı açıldı.");
+            Console.WriteLine("The connection's open.");
             return true;
         }
     }
@@ -62,13 +62,13 @@ namespace DesignPatterns
     {
         public override bool CloseConnection()
         {
-            Console.WriteLine("Bağlantı kapatıldı.");
+            Console.WriteLine("The connection's closed.");
             return true;
         }
 
         public override bool OpenConnection()
         {
-            Console.WriteLine("Bağlantı açıldı.");
+            Console.WriteLine("The connection's open.");
             return true;
         }
     }

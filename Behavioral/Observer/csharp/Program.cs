@@ -38,7 +38,7 @@ namespace DesignPatterns
 
         private void Notify()
         {
-            //gözlemcilerdeki ilgili metod tetikleniyor.
+            //triggering the relevant method in the observers.
             foreach (var observer in _observers)
             {
                 observer.SendEmail();
@@ -47,7 +47,7 @@ namespace DesignPatterns
 
         public void ChangePrice()
         {
-            //tutar değiştirildi.
+            //amount has been changed.
             Notify();
         }
     }
@@ -61,7 +61,7 @@ namespace DesignPatterns
     {
         public override void SendEmail()
         {
-            Console.WriteLine("Email gönderildi.");
+            Console.WriteLine("Email sent.");
         }
     }
 }

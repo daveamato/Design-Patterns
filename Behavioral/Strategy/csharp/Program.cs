@@ -29,9 +29,9 @@ namespace DesignPatterns
 
         public void Send()
         {
-            //ilgili işlemler
+            //related transactions
 
-            Console.WriteLine($"Yurtiçi kargo ile gönderim yapıldı.");
+            Console.WriteLine($"Domestic cargo was shipped.");
         }
     }
 
@@ -41,9 +41,9 @@ namespace DesignPatterns
 
         public void Send()
         {
-            //ilgili işlemler
+            //related transactions
 
-            Console.WriteLine($"Mng kargo ile gönderim yapıldı.");
+            Console.WriteLine($"Mng was shipped by cargo.");
         }
     }
 

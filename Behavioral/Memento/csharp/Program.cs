@@ -10,18 +10,18 @@ namespace DesignPatterns
 
             ProfileSettings profileSettings = new ProfileSettings
             {
-                UserName = "snn",
-                Name = "Sinan",
-                Email = "sinan@test.com",
-                Age = 22
+                UserName = "damato",
+                Name = "David",
+                Email = "d@amato.tk",
+                Age = 34
             };
 
             Console.WriteLine(profileSettings.ToString());
 
             careTaker.Memento = profileSettings.Backup();
 
-            profileSettings.Name = "Mert";
-            profileSettings.UserName = "mrt";
+            profileSettings.Name = "Bot";
+            profileSettings.UserName = "bot";
 
             Console.WriteLine("*****\n" + profileSettings.ToString());
 
@@ -40,7 +40,7 @@ namespace DesignPatterns
         public string Email { get; set; }
         public int Age { get; set; }
 
-        //settings nesnemizin kopyasını oluşturacak.
+        //settings will make a copy of our object.
         public ProfileSettingsMemento Backup()
         {
             ProfileSettingsMemento settingsMemento = new ProfileSettingsMemento
@@ -54,7 +54,7 @@ namespace DesignPatterns
             return settingsMemento;
         }
 
-        //aldığımız kopyadaki verileri profilesettings nesnemize geri atıyoruz.
+        //we return the data from the copy we received to our profilesettings object.
         public void SetDefaultProfileSettings(ProfileSettingsMemento settingsMemento)
         {
             UserName = settingsMemento.UserName;
@@ -78,7 +78,7 @@ namespace DesignPatterns
 
     }
 
-    //Önceki durumu Memento tipinde tutacak olan sınıf.
+    //The class that will keep the previous state of the Memento type.
     public class ProfileSettingsCareTaker
     {
         public ProfileSettingsMemento Memento { get; set; }

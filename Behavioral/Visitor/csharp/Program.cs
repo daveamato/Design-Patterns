@@ -68,12 +68,12 @@ namespace DesignPatterns
     {
         public void BuyVisit(Xbox xbox)
         {
-            Console.WriteLine($"{xbox} konsolu Amazon'dan satın alındı.");
+            Console.WriteLine($"{xbox} console purchased from Amazon.");
         }
 
         public void BuyVisit(Playstation playstation)
         {
-            Console.WriteLine($"{playstation} konsolu Amazon'dan satın alındı.");
+            Console.WriteLine($"{playstation} console purchased from Amazon.");
         }
     }
 
@@ -81,12 +81,12 @@ namespace DesignPatterns
     {
         public void BuyVisit(Xbox xbox)
         {
-            Console.WriteLine($"{xbox} konsolu Aliexpress'den satın alındı.");
+            Console.WriteLine($"{xbox} console purchased from AliExpress.");
         }
 
         public void BuyVisit(Playstation playstation)
         {
-            Console.WriteLine($"{playstation} konsolu Aliexpress'den satın alındı.");
+            Console.WriteLine($"{playstation} console purchased from Aliexpress.");
         }
     }
 }

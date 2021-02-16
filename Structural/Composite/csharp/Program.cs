@@ -7,12 +7,12 @@ namespace DesignPatterns
     {
         static void Main()
         {
-            Category category0 = new Category("Kitaplar");
-            Category category1 = new Category("Yazılım Kitapları");
-            Category category2 = new Category("Sanat Kitapları");
-            Book book = new Book("C Kitabı");
-            Book book2 = new Book("C# Kitabı");
-            Book book3 = new Book("Sanat Kitabı");
+            Category category0 = new Category("Books");
+            Category category1 = new Category("Software Books");
+            Category category2 = new Category("Art Books");
+            Book book = new Book("C Book");
+            Book book2 = new Book("C# Book");
+            Book book3 = new Book("Art Book");
 
             category0.Add(category1);
             category0.Add(category2);

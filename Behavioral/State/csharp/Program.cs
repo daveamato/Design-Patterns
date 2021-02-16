@@ -7,12 +7,12 @@ namespace DesignPatterns
         static void Main()
         {
             Context context = new Context();
-            Console.WriteLine("Lambanın başlangıç durumu: " + context.GetLampState().ToString());
+            Console.WriteLine("Initial status of the lamp: " + context.GetLampState().ToString());
 
             context.OnClose();
             context.OnOpen();
 
-            Console.WriteLine("Lambanın şuan ki durumu: " + context.GetLampState().ToString());
+            Console.WriteLine("Current status of the lamp: " + context.GetLampState().ToString());
 
             Console.Read();
         }
@@ -28,17 +28,17 @@ namespace DesignPatterns
     {
         public void OnClose()
         {
-            Console.WriteLine("Lamba açık. Kapanıyor.");
+            Console.WriteLine("The lamp's on. It's closing.");
         }
 
         public void OnOpen()
         {
-            Console.WriteLine("Lamba zaten açık.");
+            Console.WriteLine("The lamp's already on.");
         }
 
         public override string ToString()
         {
-            return "Açık";
+            return "On";
         }
     }
 
@@ -46,17 +46,17 @@ namespace DesignPatterns
     {
         public void OnClose()
         {
-            Console.WriteLine("Lamba zaten kapalı.");
+            Console.WriteLine("The lamp's already off.");
         }
 
         public void OnOpen()
         {
-            Console.WriteLine("Lamba kapalıydı. Açılıyor.");
+            Console.WriteLine("The lamp was off. Opening.");
         }
 
         public override string ToString()
         {
-            return "Kapalı";
+            return "Off";
         }
     }
 

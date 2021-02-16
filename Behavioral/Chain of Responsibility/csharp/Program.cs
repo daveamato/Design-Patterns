@@ -50,7 +50,7 @@ namespace DesignPatterns
         {
             if (searchCriteria.Extention == "pptx")
             {
-                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} dosyası oluşturuldu. Dönüşüm tamamlandı.");
+                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} file has been created. Conversion complete.");
             }
             else
             {
@@ -65,7 +65,7 @@ namespace DesignPatterns
         {
             if (searchCriteria.Extention == "docx")
             {
-                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} dosyası oluşturuldu. Dönüşüm tamamlandı.");
+                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} file has been created. Conversion complete.");
             }
             else
             {
@@ -80,7 +80,7 @@ namespace DesignPatterns
         {
             if (searchCriteria.Extention == "pdf")
             {
-                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} dosyası oluşturuldu. Dönüşüm tamamlandı.");
+                Console.WriteLine($"{searchCriteria.FileName}.{searchCriteria.Extention} file has been created. Conversion complete.");
             }
         }
     }

@@ -31,11 +31,11 @@ namespace DesignPatterns
         protected PaymentType PaymentType;
         protected CargoCompany cargoCompany;
 
-        static void Start() => Console.WriteLine($"Sipariş oluşturma başladı.");
-        void Step0() => Console.WriteLine($"Ürün sepete eklendi. Ürün adı {ProductName}");
-        void Step1() => Console.WriteLine($"Ödeme yapıldı. Ödeme yöntemi: {PaymentType}");
-        void Step2() => Console.WriteLine($"Kargoya şirketi seçildi. Seçilen: {cargoCompany}");
-        static void Finish() => Console.WriteLine("Sipariş tamamlandı.");
+        static void Start() => Console.WriteLine($"Order creation has started.");
+        void Step0() => Console.WriteLine($"The product was added to the cart. Product name: {ProductName}");
+        void Step1() => Console.WriteLine($"It's been paid for. Payment method: {PaymentType}");
+        void Step2() => Console.WriteLine($"The shipping company has been chosen. Selected: {cargoCompany}");
+        static void Finish() => Console.WriteLine("Order complete.");
 
         public abstract void Product();
         public abstract void Payment();
@@ -44,11 +44,11 @@ namespace DesignPatterns
 
         public void TemplateMethod()
         {
-            Start(); //sabit işlev
+            Start(); //fixed function
             Step0();
             Step1();
             Step2();
-            Finish(); //sabit işlev
+            Finish(); //fixed function
         }
     }
 

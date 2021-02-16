@@ -11,14 +11,14 @@ namespace DesignPatterns
 
             User user1 = new ChatUser(chatMediator)
             {
-                Name = "Sinan",
-                UserName = "snnk"
+                Name = "David",
+                UserName = "damato"
             };
 
             User user2 = new ChatUser(chatMediator)
             {
-                Name = "Behzat",
-                UserName = "behzatc"
+                Name = "Gary",
+                UserName = "gforshee"
             };
 
 
@@ -32,10 +32,10 @@ namespace DesignPatterns
             chatMediator.AddUser(user2);
             chatMediator.AddUser(bot1);
 
-            user1.SendMessage("Selam?", user2.UserName);
-            user2.SendMessage("İyiyim sen?", user1.UserName);
-            bot1.SendMessage("konuşmalara dikkat edelim.", user1.UserName);
-            user1.SendMessage("eyvallah.", bot1.UserName);
+            user1.SendMessage("Hi?", user2.UserName);
+            user2.SendMessage("Are you all right?", user1.UserName);
+            bot1.SendMessage("Let's watch the speeches.", user1.UserName);
+            user1.SendMessage("Thanks.", bot1.UserName);
 
             Console.Read();
         }
@@ -64,7 +64,7 @@ namespace DesignPatterns
         public void SendMessage(string message, string userName)
         {
             User user = _user[userName];
-            user.ReceiveMessage(message); //mesaj alındı, merkez tarafından iletimi de sağlanıyor.
+            user.ReceiveMessage(message); //message received, transmitted by the center.
         }
     }
 
@@ -80,13 +80,13 @@ namespace DesignPatterns
             _chatMediator = chatMediator;
         }
 
-        //mediator tipinin çağırıda bulunacağı metod.
+        //The method by which the mediator type will be called.
         public virtual void ReceiveMessage(string message)
         {
             Console.WriteLine($"{Name}: {message} -received-");
         }
 
-        //çağrı mediator tipine ait nesne referansına doğru yapılıyor.
+        //the call is being made towards the object reference of the mediator type.
         public void SendMessage(string message, string userName)
         {
             Console.WriteLine($"{Name}: {message} -sent to {userName}-");

@@ -23,7 +23,7 @@ namespace DesignPatterns
 
         public string Operation()
         {
-            return $"\nLOG: {Top} ve {Bottom} araç iskeletleri oluşturuldu.";
+            return $"\nLOG: {Top} and {Bottom} vehicle skeletons were created.";
         }
     }
 
@@ -34,7 +34,7 @@ namespace DesignPatterns
 
         public string Operation()
         {
-            return $"\nLOG: {Roller} ve {Oil_pump} birleştirildi ve motor oluşturuldu.";
+            return $"\nLOG: {Roller} and  {Oil_pump} combined and the engine was created.";
         }
     }
 
@@ -51,7 +51,7 @@ namespace DesignPatterns
 
         public string Operation()
         {
-            string result = "Sonuc";
+            string result = "Result";
             result += createCarSkeleton.Operation();
             result += createEngine.Operation();
 

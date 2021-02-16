@@ -25,7 +25,7 @@ namespace DesignPatterns
 
         public override string ToString()
         {
-            return $"{EmployeeDepartment} departmanınki işçilere {ProductName} ürünü promosyon olarak verildi.";
+            return $"{EmployeeDepartment} to the workers of the department {ProductName} product was given as a promotion.";
         }
     }
 
@@ -60,7 +60,7 @@ namespace DesignPatterns
 
         public override void SetProductName()
         {
-            promosyon.ProductName = "Saat";
+            promosyon.ProductName = "When";
         }
 
         public override void SetPromotionNo()
@@ -83,7 +83,7 @@ namespace DesignPatterns
 
         public override void SetProductName()
         {
-            promosyon.ProductName = "Gözlük";
+            promosyon.ProductName = "Glasses";
         }
 
         public override void SetPromotionNo()

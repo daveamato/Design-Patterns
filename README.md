@@ -1,15 +1,13 @@
-# Design Patterns (Tasarım Desenleri)
+# Design Patterns
 
-## Creational (Oluşturucu Tasarım Desenleri)
-
+## Creational
 - Singleton
 - Factory
 - Abstract Factory
 - Builder
 - Prototype
 
-## Structural (Yapısal Tasarım Desenleri)
-
+## Structural
 - Adapter
 - Bridge
 - Composite
@@ -18,8 +16,7 @@
 - Flyweight
 - Proxy
 
-## Behavioral (Davranışsal Tasarım Desenleri)
-
+## Behavioral
 - Chain of Responsibility
 - Command
 - Interpreter

@@ -9,8 +9,8 @@ namespace DesignPatterns
         {
             PersonelListAggregate PersonelListAggregate = new PersonelListAggregate();
 
-            Personel sinan = new Personel { Id = 1, Name = "sinan" };
-            Personel mert = new Personel { Id = 2, Name = "mert" };
+            Personel sinan = new Personel { Id = 1, Name = "David" };
+            Personel mert = new Personel { Id = 2, Name = "Gary" };
 
             PersonelListAggregate.Add(sinan);
             PersonelListAggregate.Add(mert);

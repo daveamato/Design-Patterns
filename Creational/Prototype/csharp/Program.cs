@@ -6,7 +6,7 @@ namespace DesignPatterns
     {
         static void Main()
         {
-            Engineer engineer = new Engineer("Sinan", 123.11);
+            Engineer engineer = new Engineer("David", 123.11);
             Engineer engineer2 = engineer.Clone();
 
             Console.Read();

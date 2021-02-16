@@ -44,7 +44,7 @@ namespace DesignPatterns
 
         public void Draw(int location_x, int location_y)
         {
-            Console.WriteLine($"{Color} renginde {Material} ve {Helium} kullanılarak yuvarlak şekil oluşturuldu. Konum: {location_x}, {location_y}");
+            Console.WriteLine($"{Color} color {Material} and {Helium} a round shape was created using . Location: {location_x}, {location_y}");
         }
     }
 

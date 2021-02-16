@@ -35,7 +35,7 @@ namespace DesignPatterns
 
         public void Gonder()
         {
-            Console.WriteLine($"{from}'dan {to}'ya mail gönderiliyor.");
+            Console.WriteLine($"{from} - {to} e-mails are being sent.");
         }
     }
 
@@ -62,7 +62,7 @@ namespace DesignPatterns
 
         public override void Gonder()
         {
-            Console.WriteLine("Template kullanıldı.");
+            Console.WriteLine("Template Used.");
             base.Gonder();
         }
     }
@@ -77,7 +77,7 @@ namespace DesignPatterns
 
         public override void Gonder()
         {
-            Console.WriteLine($"{token} ile şifrelendi.");
+            Console.WriteLine($"encrypted with: {token}.");
             base.Gonder();
         }
     }
