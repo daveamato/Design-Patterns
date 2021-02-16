@@ -52,9 +52,9 @@ namespace DesignPatterns
         }
     }
 
-    //yukarıdaki 2 class Crypto interface'inden türetilmiştir. Bu class'ların çalışmasında herhangi bir proıblem yoktur.
+    //it is derived from the 2 class Crypto interface above. There is no proiblam in the operation of these classes.
 
-    //Aşağıdaki class Crypto interface'i kullanılarak türetilmediğinden metodları farklıdır. Bu class'ın adapter'ını yazarak CryptoA ve CryptoB class'larının kullanıldığı gibi kullanılabilir.
+    //The following class is not derived using the Crypto interface, so its methods are different. It can be used as cryptoa and cryptob classes are used by writing the adapter of this class.
 
     public class CryptoOther
     {
